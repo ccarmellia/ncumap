@@ -1,0 +1,44 @@
+{
+  "name": "fiber",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "map2tsx": "npx gltfjsx ./models/map.glb  --keepnames --precision=5 --printwidth=80 && python3 ./scripts/generate_model.py && yarn prettier -w ./src/Map.tsx"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.16",
+    "@react-spring/three": "^9.5.5",
+    "@react-three/cannon": "^6.4.0",
+    "@react-three/drei": "^9.32.3",
+    "@react-three/fiber": "^8.8.7",
+    "@react-three/rapier": "^0.9.0",
+    "autoprefixer": "^10.4.13",
+    "classnames": "^2.3.2",
+    "nipplejs": "^0.9.1",
+    "postcss": "^8.4.19",
+    "react": "^18.0.0",
+    "react-dat-gui": "^4.1.1",
+    "react-dom": "^18.0.0",
+    "react-tracked": "^1.7.10",
+    "tailwindcss": "^3.2.4",
+    "three": "^0.145.0",
+    "three-stdlib": "^2.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/three": "^0.150.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "prettier": "^2.7.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1",
+    "vite-plugin-literals-collector": "^1.0.0"
+  }
+}
